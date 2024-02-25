@@ -1,0 +1,50 @@
+@import "typografy"
+// header
+.header
+  display: grid
+  grid-template-columns: 35rem 1fr 35rem
+  padding: 15px 0
+
+
+.logo
+  display: grid
+  grid-template-columns: 36px 1fr
+  column-gap: 1rem
+  padding: 0 15px
+
+  &__text
+    font-size: $--font-size-middle
+  &__img
+    align-self: center
+
+
+.nav
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  column-gap: 4rem
+  align-items: center
+  color: $--color-gray
+  font-size: $--font-size-middle
+
+  &__link
+    text-align: center
+
+.auth
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  font-weight: $--font-bold
+  font-size: $--font-size-middle
+  align-items: center
+  justify-items: end
+
+  width: 300px
+
+  &__singIn
+    color: red
+
+  &__singUp
+    justify-self: center
+    border: $--color-orange solid 1px
+    padding: 1.3rem 3.5rem
+    border-radius: 3rem
+    text-align: center
