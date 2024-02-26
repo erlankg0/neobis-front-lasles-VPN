@@ -1,0 +1,42 @@
+@import "typografy"
+
+
+.about
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  padding: 3.7rem 0
+  border-radius: 1rem
+  border: $--color-gray solid 1px
+  justify-items: center
+
+
+  &__item
+    display: grid
+    grid-template-columns: repeat(2, 5.5rem)
+    column-gap: 1rem
+    align-items: center
+
+  &__item:first-child
+    border-right: #0B132A solid 1px
+
+  &__img
+    background-color: #FFECEC
+    object-fit: cover
+    border-radius: 50%
+    padding: 1.5rem
+    height: 24px
+    width: 24px
+
+  &__text
+    text-align: center
+    margin: 0
+    padding: 0
+
+  &__title
+    font-size: 2.5rem
+    line-height: 0
+
+  &__description
+    font-size: 2rem
+    line-height: 0
+    color: $--color-gray
