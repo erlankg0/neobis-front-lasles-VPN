@@ -1,0 +1,50 @@
+@import "typography"
+
+.features
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  column-gap: 1rem
+
+  padding: 5rem 0
+
+  &__img
+    align-self: center
+    justify-self: center
+  &__text
+    align-self: center
+
+  &__title
+    font-size: 3rem
+    font-weight: $--font-bold
+    color: $--color-black
+    width: 39rem
+
+  &__subtitle
+    color: $--color-gray
+    line-height: 3rem
+    font-size: 1.6rem
+    width: 43rem
+
+
+  &__list
+    list-style: none
+
+    display: grid
+    grid-template-columns: 1fr
+    padding: 0
+
+  &__item
+    font-size: $--fons-size-small
+    color: $--color-gray
+    line-height: 3rem
+    display: flex
+    gap: 1rem
+
+  &__item:before
+    content: ''
+    background-image: url("/src/img/icons/done.png")
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    width: 24px
+    height: 24px
