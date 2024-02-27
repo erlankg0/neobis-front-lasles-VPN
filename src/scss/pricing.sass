@@ -1,9 +1,20 @@
 @import "typography"
 .pricing
-  padding-top: 10rem
+
+  display: flex
+  flex-direction: column
+  gap: 6rem
+  align-items: center
 
   &__content
     display: grid
     grid-template-columns: repeat(3, 330px)
     column-gap: 5rem
     justify-content: center
+
+  &__text
+    display: flex
+    flex-direction: column
+    width: 60rem
+    text-align: center
+    gap: 2rem

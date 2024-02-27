@@ -5,29 +5,27 @@
 .card
   border: $--color-gray solid 1px
   border-radius: 1rem
+  padding: 5rem 0
+  display: flex
+  flex-direction: column
+  justify-content: space-between
 
-  display: grid
-  grid-template-columns: 1fr
-
-  justify-items: center
-
-  padding: 7rem 5rem
-  max-width: 33rem
+  &__top
+    display: flex
+    flex-direction: column
+    align-items: center
 
   &__img
-    align-self: end
+    width: 15rem
 
   &__title
     font-size: 1.8rem
     font-weight: $--font-bold
-    align-self: baseline
 
   &__list
     list-style: none
-    height: 20rem
-    justify-self: center
     padding: 0
-    margin: 0
+
   &__item
     color: $--color-gray
     font-size: $--fons-size-small
@@ -46,8 +44,46 @@
     height: 2.4rem
     align-self: center
 
+  &__down
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+  &__pricing
+    display: flex
+    align-self: center
+    align-items: center
+    gap: .5rem
+
+  &__price
+    font-size: 25px
+    line-height: 3rem
+    color: $--color-black
+
+  &__period
+    color: $--color-gray
+    font-size: 25px
+    line-height: 3rem
+
   &__button
     border: $--color-orange solid 1px
+    width: 17rem
+    background-color: transparent
+    border-radius: 5rem
+    padding: 1rem
+
+    color: $--color-orange
+    font-size: $--font-size-middle
+    font-weight: $--font-bold
+    transition: .2s
+
+  &__button:hover
+    background-color: $--color-orange
+    color: #ffffff
+    filter: drop-shadow(0 2rem 20px $--color-shadow)
+    border-radius: 6rem
+
 
 
 .card:hover
