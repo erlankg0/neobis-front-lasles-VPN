@@ -7,10 +7,15 @@ $--font-family: 'Rubik', serif
 html, body
   font-size: 10px
   font-family: $--font-family
+  margin: 0
+  padding: 0
+  height: 100%
 
 
-
-
+.wrapper
+  min-height: 100%
+  display: flex
+  flex-direction: column
 main
   flex: 1 1 auto
 
@@ -41,6 +46,9 @@ main
 @import "card"
 // testimonials
 @import "testimonials"
+
+// footer
+@import "footer"
 
 // typography
 @import "typography"

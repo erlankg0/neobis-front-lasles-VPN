@@ -11,69 +11,79 @@
 </head>
 
 <body>
-<div class="container">
+<div class="wrapper">
     <header class="header">
-        <a class="logo">
-            <img src="src/img/icons/favicon.svg" alt="Logo VPN" class="logo__img">
-            <p class="logo__text">Lasles<strong>VPN</strong></p>
-        </a>
+        <div class="container">
+            <div class="header__content">
+                <a class="logo">
+                    <img src="src/img/icons/favicon.svg" alt="Logo VPN" class="logo__img">
+                    <p class="logo__text">Lasles<strong>VPN</strong></p>
+                </a>
 
-        <nav class="nav">
-            <a class="nav__link">About</a>
-            <a class="nav__link">Features</a>
-            <a class="nav__link">Pricing</a>
-            <a class="nav__link">Testimonials</a>
-            <a class="nav__link">Help</a>
-        </nav>
+                <nav class="nav">
+                    <a class="nav__link">About</a>
+                    <a class="nav__link">Features</a>
+                    <a class="nav__link">Pricing</a>
+                    <a class="nav__link">Testimonials</a>
+                    <a class="nav__link">Help</a>
+                </nav>
 
 
-        <div class="auth">
-            <div class="auth__singIn">Sing In</div>
-            <div class="auth__singUp">Sing Up</div>
+                <div class="auth">
+                    <div class="auth__singIn">Sing In</div>
+                    <div class="auth__singUp">Sing Up</div>
+                </div>
+            </div>
         </div>
     </header>
     <main class="main">
         <!-- intro -->
         <section class="intro">
-            <div class="intro__content">
-                <h1 class="intro__title">Want anything to be easy with <strong>LaslesVPN</strong>.</h1>
-                <p class="intro__subtitle">Provide a network for all your needs with ease and fun using <strong>LaslesVPN</strong><br>
-                    discover interesting features from us.</p>
-                <a href="#" class="intro__link btnOrange">
-                    Get Started
-                </a>
+            <div class="container">
+                <div class="intro__container">
+                    <div class="intro__content">
+                        <h1 class="intro__title">Want anything to be easy with <strong>LaslesVPN</strong>.</h1>
+                        <p class="intro__subtitle">Provide a network for all your needs with ease and fun using <strong>LaslesVPN</strong><br>
+                            discover interesting features from us.</p>
+                        <a href="#" class="intro__link btnOrange">
+                            Get Started
+                        </a>
+                    </div>
+                    <img src="./src/img/intro.png" alt="Img Intro"/>
+                </div>
             </div>
-            <img src="./src/img/intro.png" alt="Img Intro"/>
         </section>
         <!-- end intro-->
 
         <!-- About -->
         <section class="about">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__item">
+                        <img class="about__img" src="src/img/icons/users.svg" alt="users"/>
+                        <div class="about__text">
+                            <h4 class="about__title">90+</h4>
+                            <p class="about__description">Users</p>
+                        </div>
+                    </div>
 
-            <div class="about__item">
-                <img class="about__img" src="src/img/icons/users.svg" alt="users"/>
-                <div class="about__text">
-                    <h4 class="about__title">90+</h4>
-                    <p class="about__description">Users</p>
+                    <div class="about__item">
+                        <img class="about__img" src="src/img/icons/location.svg" alt="location"/>
+                        <div class="about__text">
+                            <h4 class="about__title">30+</h4>
+                            <p class="about__description">Locations</p>
+                        </div>
+                    </div>
+
+                    <div class="about__item">
+                        <img class="about__img" src="src/img/icons/servers.svg" alt="server"/>
+                        <div class="about__text">
+                            <h4 class="about__title">50+</h4>
+                            <p class="about__description">Servers</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="about__item">
-                <img class="about__img" src="src/img/icons/location.svg" alt="location"/>
-                <div class="about__text">
-                    <h4 class="about__title">30+</h4>
-                    <p class="about__description">Locations</p>
-                </div>
-            </div>
-
-            <div class="about__item">
-                <img class="about__img" src="src/img/icons/servers.svg" alt="server"/>
-                <div class="about__text">
-                    <h4 class="about__title">50+</h4>
-                    <p class="about__description">Servers</p>
-                </div>
-            </div>
-
 
         </section>
         <!--End About-->
@@ -81,179 +91,212 @@
 
         <!--   Features   -->
         <section class="features">
-            <div class="features__img">
-                <img src="src/img/features.png" alt="features image">
-            </div>
-            <div class="features__text">
-                <h3 class="features__title">We Provide Many Features You Can Use</h3>
-                <p class="features__subtitle">You can explore the features that we provide with fun and have their own
-                    functions each feature.</p>
-                <ul class="features__list">
-                    <li class="features__item">Powerfull online protection.</li>
-                    <li class="features__item">Internet without borders.</li>
-                    <li class="features__item">Supercharged VPN</li>
-                    <li class="features__item">No specific time limits.</li>
-                </ul>
+            <div class="container">
+                <div class="features__content">
+                    <div class="features__img">
+                        <img src="src/img/features.png" alt="features image">
+                    </div>
+                    <div class="features__text">
+                        <h3 class="features__title">We Provide Many Features You Can Use</h3>
+                        <p class="features__subtitle">You can explore the features that we provide with fun and have
+                            their
+                            own
+                            functions each feature.</p>
+                        <ul class="features__list">
+                            <li class="features__item">Powerfull online protection.</li>
+                            <li class="features__item">Internet without borders.</li>
+                            <li class="features__item">Supercharged VPN</li>
+                            <li class="features__item">No specific time limits.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <!--  end Features      -->
 
         <!--  pricing        -->
         <section class="pricing">
-            <div class="pricing__text">
-                <h4 class="title">Choose Your Plan</h4>
-                <p class="description">Let's choose the package that is best for you and explore it happily and
-                    cheerfully.</p>
+            <div class="container">
+                <div class="pricing__container">
+                    <div class="pricing__text">
+                        <h4 class="title">Choose Your Plan</h4>
+                        <p class="description">Let's choose the package that is best for you and explore it happily and
+                            cheerfully.</p>
+                    </div>
+                    <div class="pricing__content">
+
+                        <!--    card          -->
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="/src/img/cards/free.png" class="card__img" alt="free card">
+                                <h5 class="card__title">Free Plan</h5>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Unlimited Bandwitch
+                                    </li>
+
+                                    <li class="card__item">
+                                        Encrypted Connection
+                                    </li>
+
+                                    <li class="card__item">
+                                        No Traffic Logs
+                                    </li>
+
+                                    <li class="card__item">
+                                        Works on All Devices
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="card__down">
+                                <div class="card__pricing">
+                                    <h5 class="card__price">Free</h5>
+                                </div>
+                                <button class="card__button" type="button">Select</button>
+                            </div>
+                        </div>
+                        <!--    end card        -->
+
+                        <!--    card          -->
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="/src/img/cards/standard.png" class="card__img" alt="free card">
+                                <h5 class="card__title">Standart Plan</h5>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Unlimited Bandwitch
+                                    </li>
+
+                                    <li class="card__item">
+                                        Encrypted Connection
+                                    </li>
+
+                                    <li class="card__item">
+                                        No Traffic Logs
+                                    </li>
+
+                                    <li class="card__item">
+                                        Works on All Devices
+                                    </li>
+
+                                    <li class="card__item">
+                                        Connect Anyware
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="card__down">
+                                <div class="card__pricing">
+                                    <h5 class="card__price">9$ </h5>
+                                    <p class="card__period"> / mo</p>
+                                </div>
+                                <button class="card__button" type="button">Select</button>
+                            </div>
+                        </div>
+                        <!--    end card        -->
+
+                        <!--    card          -->
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="/src/img/cards/premium.png" class="card__img" alt="free card">
+                                <h5 class="card__title">Premium Plan</h5>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Unlimited Bandwitch
+                                    </li>
+
+                                    <li class="card__item">
+                                        Encrypted Connection
+                                    </li>
+
+                                    <li class="card__item">
+                                        No Traffic Logs
+                                    </li>
+
+                                    <li class="card__item">
+                                        Works on All Devices
+                                    </li>
+
+                                    <li class="card__item">
+                                        Connect Anyware
+                                    </li>
+
+
+                                    <li class="card__item">
+                                        Get New Features
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="card__down">
+                                <div class="card__pricing">
+                                    <h5 class="card__price">12$ </h5>
+                                    <p class="card__period">/ mo</p>
+                                </div>
+                                <button class="card__button" type="button">Select</button>
+                            </div>
+                        </div>
+                        <!--    end card        -->
+
+
+                    </div>
+                </div>
             </div>
-            <div class="pricing__content">
-
-                <!--    card          -->
-                <div class="card">
-                    <div class="card__top">
-                        <img src="/src/img/cards/free.png" class="card__img" alt="free card">
-                        <h5 class="card__title">Free Plan</h5>
-                        <ul class="card__list">
-                            <li class="card__item">
-                                Unlimited Bandwitch
-                            </li>
-
-                            <li class="card__item">
-                                Encrypted Connection
-                            </li>
-
-                            <li class="card__item">
-                                No Traffic Logs
-                            </li>
-
-                            <li class="card__item">
-                                Works on All Devices
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div class="card__down">
-                        <div class="card__pricing">
-                            <h5 class="card__price">Free</h5>
-                        </div>
-                        <button class="card__button" type="button">Select</button>
-                    </div>
-                </div>
-                <!--    end card        -->
-
-                <!--    card          -->
-                <div class="card">
-                    <div class="card__top">
-                        <img src="/src/img/cards/standard.png" class="card__img" alt="free card">
-                        <h5 class="card__title">Standart Plan</h5>
-                        <ul class="card__list">
-                            <li class="card__item">
-                                Unlimited Bandwitch
-                            </li>
-
-                            <li class="card__item">
-                                Encrypted Connection
-                            </li>
-
-                            <li class="card__item">
-                                No Traffic Logs
-                            </li>
-
-                            <li class="card__item">
-                                Works on All Devices
-                            </li>
-
-                            <li class="card__item">
-                                Connect Anyware
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div class="card__down">
-                        <div class="card__pricing">
-                            <h5 class="card__price">9$ </h5>
-                            <p class="card__period"> / mo</p>
-                        </div>
-                        <button class="card__button" type="button">Select</button>
-                    </div>
-                </div>
-                <!--    end card        -->
-
-                <!--    card          -->
-                <div class="card">
-                    <div class="card__top">
-                        <img src="/src/img/cards/premium.png" class="card__img" alt="free card">
-                        <h5 class="card__title">Premium Plan</h5>
-                        <ul class="card__list">
-                            <li class="card__item">
-                                Unlimited Bandwitch
-                            </li>
-
-                            <li class="card__item">
-                                Encrypted Connection
-                            </li>
-
-                            <li class="card__item">
-                                No Traffic Logs
-                            </li>
-
-                            <li class="card__item">
-                                Works on All Devices
-                            </li>
-
-                            <li class="card__item">
-                                Connect Anyware
-                            </li>
-
-
-                            <li class="card__item">
-                                Get New Features
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div class="card__down">
-                        <div class="card__pricing">
-                            <h5 class="card__price">12$ </h5>
-                            <p class="card__period">/ mo</p>
-                        </div>
-                        <button class="card__button" type="button">Select</button>
-                    </div>
-                </div>
-                <!--    end card        -->
-
-
-            </div>
-
         </section>
         <!--  end pricing      -->
 
         <!--    Testimonials    -->
         <section class="testimonials">
-            <div class="testimonials__text">
-                <h3 class="testimonials__title title">
-                    Huge Global Network of Fast VPN
-                </h3>
-                <p class="testimonials__description description">
-                    See LaslesVPN everywhere to make it easier for you when you move locations.
-                </p>
-            </div>
-            <div class="testimonials__map">
-                <img class="testimonials__img" alt="testimonials map" src="src/img/map.png"/>
-            </div>
-            <div class="testimonials__companies">
-                <img src="src/img/companies/netflix.png" alt="netflix" class="testimonials__company">
-                <img src="src/img/companies/reddit.png" alt="reddit" class="testimonials__company">
-                <img src="src/img/companies/amazon.png" alt="amazon" class="testimonials__company">
-                <img src="src/img/companies/discord.png" alt="discord" class="testimonials__company">
-                <img src="src/img/companies/spotify.png" alt="spotify" class="testimonials__company">
+            <div class="container">
+                <div class="testimonials__text">
+                    <h3 class="testimonials__title title">
+                        Huge Global Network of Fast VPN
+                    </h3>
+                    <p class="testimonials__description description">
+                        See LaslesVPN everywhere to make it easier for you when you move locations.
+                    </p>
+                </div>
+                <div class="testimonials__map">
+                    <img class="testimonials__img" alt="testimonials map" src="src/img/map.png"/>
+                </div>
+                <div class="testimonials__companies">
+                    <img src="src/img/companies/netflix.png" alt="netflix" class="testimonials__company">
+                    <img src="src/img/companies/reddit.png" alt="reddit" class="testimonials__company">
+                    <img src="src/img/companies/amazon.png" alt="amazon" class="testimonials__company">
+                    <img src="src/img/companies/discord.png" alt="discord" class="testimonials__company">
+                    <img src="src/img/companies/spotify.png" alt="spotify" class="testimonials__company">
+                </div>
             </div>
         </section>
         <!--    End Testimonials    -->
     </main>
-    <footer class="footer">footer</footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__left">
+                <div class="footer__left-top">
+                    <a class="logo">
+                        <img src="src/img/icons/favicon.svg" alt="Logo VPN" class="logo__img">
+                        <p class="logo__text">Lasles<strong>VPN</strong></p>
+                    </a>
+                    <h6 class="footer__info"></h6>
+                </div>
+                <div class="footer__left-down">
+                    <ul class="footer__social">
+                        <li class="footer__network"></li>
+                    </ul>
+                    <div class="footer__license">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__right"></div>
+        </div>
+    </footer>
 </div>
 </body>
 
