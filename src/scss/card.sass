@@ -1,0 +1,55 @@
+@import "typography"
+
+
+
+.card
+  border: $--color-gray solid 1px
+  border-radius: 1rem
+
+  display: grid
+  grid-template-columns: 1fr
+
+  justify-items: center
+
+  padding: 7rem 5rem
+  max-width: 33rem
+
+  &__img
+    align-self: end
+
+  &__title
+    font-size: 1.8rem
+    font-weight: $--font-bold
+    align-self: baseline
+
+  &__list
+    list-style: none
+    height: 20rem
+    justify-self: center
+    padding: 0
+    margin: 0
+  &__item
+    color: $--color-gray
+    font-size: $--fons-size-small
+    line-height: 3rem
+    display: flex
+    gap: 1rem
+    align-self: center
+
+  &__item:before
+    content: ''
+    background-image:  url("/src/img/icons/ok.png")
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    width: 2.4rem
+    height: 2.4rem
+    align-self: center
+
+  &__button
+    border: $--color-orange solid 1px
+
+
+.card:hover
+  border: $--color-orange solid 1px
+
