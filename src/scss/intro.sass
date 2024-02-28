@@ -24,11 +24,29 @@
     line-height: 3rem
     color: $--color-gray
 
-  &__link
+  &__btn
     width: 25rem
-    color: white
+    border-radius: 1rem
+    border: $--color-orange solid 1px
+
+    cursor: pointer
+
+    text-decoration: none
+    color: $--color-orange
+    font-size: $--font-size-middle
+    font-weight: $--font-bold
+
     align-self: center
+    text-align: center
+
     padding: 1.5rem
+    transition: .5s ease-in-out
+
+  &__btn:hover
+    background-color: $--color-orange
+    color: #ffffff
+    filter: drop-shadow(0 2rem 20px $--color-shadow)
+    border-radius: 1rem
 
   &__img
     width: 100%

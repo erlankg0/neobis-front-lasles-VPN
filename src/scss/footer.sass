@@ -1,3 +1,68 @@
 @import "typography"
+ul, li
+  padding: 0
+  margin: 0
 .footer
-  background-color: $--color-gray
+  background-color: $--background-color
+  padding: 10rem
+
+  &__left
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__content
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+
+  &__logo
+    display: flex
+    align-items: center
+    gap: 1rem
+
+  &__logo-text
+    font-size: 2rem
+    font-weight: 500
+
+  &__info
+    color: $--color-gray
+    font-size: $--font-size-middle
+    font-weight: 400
+    max-width: 35rem
+
+  &__social
+    display: flex
+    flex-direction: row
+    list-style: none
+
+  &__license
+    color: $--color-gray
+    font-weight: 400
+    font-size: $--font-size-middle
+
+  &__right
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    column-gap: 12rem
+
+  &__navigation
+    display: flex
+    flex-direction: column
+    align-items: self-start
+    gap: 2rem
+
+    &-title
+      color: $--color-black
+      font-size: 1.8rem
+      font-weight: $--font-bold
+
+    &-list
+      list-style: none
+      display: flex
+      flex-direction: column
+      gap: 1rem
+
+    &-item
+      color: $--color-gray
+      font-size: $--font-size-middle
+      font-weight: $--font-regular
+      cursor: pointer
