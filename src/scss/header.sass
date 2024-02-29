@@ -14,7 +14,7 @@
   cursor: pointer
 
   &__text
-    font-size: $--font-size-middle
+    font-size: 2rem
   &__img
     align-self: center
 
@@ -39,13 +39,18 @@
   align-items: center
   justify-items: end
   cursor: pointer
+  gap: 3rem
 
   width: 300px
 
-  &__singIn
-    color: red
+  &__singIn, &__singUp
+    font-weight: 500
+    font-size: $--font-size-middle
+    color: $--color-black
+    line-height: 18.96px
 
   &__singUp
+    color: $--color-orange
     justify-self: center
     border: $--color-orange solid 1px
     padding: 1.3rem 3.5rem
