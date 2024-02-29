@@ -7,8 +7,39 @@
     <link rel="stylesheet" href="./dist/css/normalize.css">
     <link rel="stylesheet" href="./dist/css/styles.css">
     <link rel="icon" type="image/x-icon" href="src/img/icons/favicon.svg">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
     <title>LaslesVPM</title>
 </head>
+<style>
+    .swiper-slide {
+        min-height: 231px !important;
+        max-height: 231px !important;
+    }
+
+    .swiper-pagination-bullet {
+        height: 1.5rem !important;
+        width: 1.5rem !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        height: 1.5rem !important;
+        width: 4.5rem !important;
+        background-color: #F53838 !important;
+        border-radius: 1rem !important;
+    }
+
+    .reviews__pagination {
+        display: flex;
+        gap: 1.5rem;
+    }
+</style>
 
 <body>
 <div class="wrapper">
@@ -278,12 +309,194 @@
         <section class="reviews">
             <div class="container">
                 <div class="reviews__content">
-                    <div class="reviews__text"></div>
-                    <div class="reviews__swapper"></div>
+                    <div class="reviews__text">
+                        <h3 class="reviews__title title">
+                            Trusted by Thousands of Happy Customer
+                        </h3>
+                        <p class="reviews__description description">
+                            These are the stories of our customers who have joined us with great pleasure when using
+                            this crazy feature.
+                        </p>
+                    </div>
+                    <div class="reviews__sliders">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper reviews__wrapper">
+                                `
+                                <div class="swiper-slide reviews__slide">
+                                    <div class="reviews__card">
+                                        <div class="reviews__cardTop">
+                                            <div class="reviews__user">
+                                                <div class="reviews__userInfo">
+                                                    <img src="src/img/reviews/user1.png" alt="reviewed user"
+                                                         class="reviews__img"/>
+                                                    <div class="reviews__userText">
+                                                        <p class="reviews__name">
+                                                            Viezh Robert
+                                                        </p>
+                                                        <p class="reviews__location">
+                                                            Warsaw, Poland
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__rating">
+                                                    <div class="reviews__point">4.5</div>
+                                                    <div class="reviews__star">
+                                                        <img src="src/img/card/star.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__cardDown">
+                                            <p class="reviews__cardText">“Wow... I am very happy to use this VPN, it
+                                                turned out to be more than my expectations and so far there have been no
+                                                problems. LaslesVPN always the best”.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                `
+                                <div class="swiper-slide reviews__slide">
+
+                                    <div class="reviews__card">
+                                        <div class="reviews__cardTop">
+                                            <div class="reviews__user">
+                                                <div class="reviews__userInfo">
+                                                    <img src="src/img/reviews/user1.png" alt="reviewed user"
+                                                         class="reviews__img"/>
+                                                    <div class="reviews__userText">
+                                                        <p class="reviews__name">
+                                                            Yessica Christy
+                                                        </p>
+                                                        <p class="reviews__location">
+                                                            Shanxi, China
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__rating">
+                                                    <div class="reviews__point">5.5</div>
+                                                    <div class="reviews__star">
+                                                        <img src="src/img/card/star.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__cardDown">
+                                            <p class="reviews__cardText">“I like it because I like to travel far and
+                                                still can connect with high speed.”.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                `
+                                <div class="swiper-slide reviews__slide">
+                                    <div class="reviews__card">
+                                        <div class="reviews__cardTop">
+                                            <div class="reviews__user">
+                                                <div class="reviews__userInfo">
+                                                    <img src="src/img/reviews/user3.png" alt="reviewed user"
+                                                         class="reviews__img"/>
+                                                    <div class="reviews__userText">
+                                                        <p class="reviews__name">
+                                                            Kim Young Jou
+                                                        </p>
+                                                        <p class="reviews__location">
+                                                            Seoul, South Korea
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__rating">
+                                                    <div class="reviews__point">4.5</div>
+                                                    <div class="reviews__star">
+                                                        <img src="src/img/card/star.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__cardDown">
+                                            <p class="reviews__cardText">“This is very unusual for my business that
+                                                currently requires a virtual private network that has high
+                                                security.”.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                `
+                                <div class="swiper-slide reviews__slide">
+                                    <div class="reviews__card">
+                                        <div class="reviews__cardTop">
+                                            <div class="reviews__user">
+                                                <div class="reviews__userInfo">
+                                                    <img src="src/img/reviews/user4.png" alt="reviewed user"
+                                                         class="reviews__img"/>
+                                                    <div class="reviews__userText">
+                                                        <p class="reviews__name">
+                                                            Kairat Jumanov
+                                                        </p>
+                                                        <p class="reviews__location">
+                                                            Бишкек, Кыргызстан
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__rating">
+                                                    <div class="reviews__point">5</div>
+                                                    <div class="reviews__star">
+                                                        <img src="src/img/card/star.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__cardDown">
+                                            <p class="reviews__cardText">“Head 22го потока Frontend Neobis club
+
+                                                Senior <strong>* JavaScript *</strong>
+                                                ”.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                `
+
+                            </div>
+                        </div>
+
+                        <div class="reviews__nav">
+                            <div class="reviews__pagination"></div>
+                            <div class="reviews__navigation">
+                                <div class="reviews__prev">
+                                    <img src="src/img/reviews/prev.svg" alt="prev button"/>
+                                </div>
+                                <div class="reviews__next">
+                                    <img src="src/img/reviews/next.svg" alt="prev next"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!--  end reviews  -->
+
+        <!-- adv -->
+        <section class="adv">
+            <div class="container">
+                <div class="adv__content">
+                    <div class="adv__right">
+                        <h3 class="adv__title title">
+                            Subscribe Now for Get Special Features!
+                        </h3>
+                        <p class="adv__description description">
+                            Let's subscribe with us and find the fun.
+                        </p>
+                    </div>
+                    <div class="adv__left">
+                        <button class="adv__button card__button">
+                            Subscribe Now
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--End About-->
     </main>
     <footer class="footer">
         <div class="container">
@@ -406,6 +619,13 @@
         </div>
     </footer>
 </div>
-</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
+<script type="module" src="src/js/script.js">
+
+</script>
+
+
+</body>
 </html>

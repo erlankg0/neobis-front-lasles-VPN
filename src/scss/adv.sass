@@ -1,0 +1,43 @@
+@import "typography"
+
+.adv
+  background-color: rgba($--background-color, .3)
+  position: absolute
+
+  &__content
+    position: absolute
+    top: 50%
+    left: 25%
+    transform: translate(25%, -50%)
+    width: 114rem
+
+    max-width: 114rem
+    margin: 0 auto
+
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    background-color: #ffffff
+    padding: 6rem 7rem
+    border-radius: 1rem
+
+  &__title
+    text-align: start !important
+    max-width: 44rem
+
+  &__description
+    text-align: start !important
+
+  &__left
+    align-self: center
+    justify-self: end
+
+
+  &__button
+    background-color: $--color-orange
+    padding: 2rem
+    width: 25rem
+    font-size: $--font-size-middle
+    color: #ffffff
+    font-weight: 500
+    border-radius: 1rem
+    border: none

@@ -1,0 +1,143 @@
+@import "typography"
+.reviews
+  background-color: rgba($--background-color, .3)
+  padding: 5rem 0 20rem 0
+
+  &__content
+    display: flex
+    flex-direction: column
+    gap: 6rem
+
+  &__text
+    display: grid
+    grid-template-columns: 1fr
+    row-gap: 1rem
+    justify-content: center
+    justify-items: center
+    text-align: center
+
+  &__title
+    max-width: 45rem
+
+  &__description
+    max-width: 55rem
+
+  // sliders container
+
+  &__sliders
+    display: flex
+    flex-direction: column
+    gap: 6rem
+    overflow: hidden
+
+  &__nav
+    display: flex
+    justify-content: space-between
+
+  &__prev, &__next
+    color: $--color-orange
+    font-size: 2rem
+    padding: 1.4rem
+    border-radius: 50%
+    cursor: pointer
+    border: $--color-orange solid 2px
+    width: 3rem
+    height: 3rem
+    display: flex
+    justify-content: center
+
+  &__next img
+    width: 3rem
+
+  &__prev img
+    width: 2rem
+
+  &__next
+    background-color: $--color-orange
+
+  &__navigation
+    display: flex
+    gap: 2rem
+
+  &__slide
+    max-width: 40rem
+    display: flex !important
+
+  &__wrapper
+    gap: 5rem
+    min-height: 23rem
+
+
+  &__cardTop
+    display: grid
+
+  &__user
+    display: grid
+    grid-template-columns: 1fr 8rem
+
+  &__userInfo
+    display: flex
+    gap: 2rem
+
+  &__userText
+    display: flex
+    flex-direction: column
+    align-self: center
+    gap: .5rem
+
+  &__name
+    font-size: 1.8rem
+    font-weight: $--font-bold
+    color: $--color-black
+    line-height: 3rem
+
+  &__location
+    color: $--color-gray
+    font-size: $--fons-size-small
+
+  &__img
+    width: 5rem
+    height: 5rem
+    border-radius: 50%
+
+  &__rating
+    display: flex
+    gap: 1rem
+    justify-self: self-end
+
+  &__point
+    text-align: center
+    font-size: 1.6rem
+    color: $--color-black
+    font-weight: $--font-bold
+    align-self: center
+
+  &__star
+    justify-self: center
+    align-self: center
+
+  &__cardText
+    color: $--color-black
+    font-size: 1.6rem
+    font-weight: 400
+    line-height: 3rem
+
+.reviews__card
+  padding: 3rem
+  border: $--color-gray solid 1px
+  border-radius: 1rem
+  display: flex
+  flex-direction: column
+  gap: 1rem
+
+.reviews__card:hover
+  border: $--color-orange solid 1px
+
+.swiper-pagination-bullet
+  height: 1.5rem
+
+.swiper-pagination-bullet-active
+  background-color: $--color-orange
+  width: 4.5rem
+  height: 1.5rem
+  border-radius: 1rem
