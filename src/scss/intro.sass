@@ -53,3 +53,38 @@
   &__img
     width: 100%
     height: 100%
+
+
+// адаптация
+
+@media (max-width: 1024px)
+  .intro
+    &__title
+      font-size: 3.5rem
+      line-height: 6rem
+
+    &__subtitle
+      font-size: 1.4rem
+
+
+@media (max-width: 768px), (max-width: 425px), (max-width: 375px)
+  .intro
+    padding: 0
+
+    &__container
+      grid-template-columns: 1fr
+
+    &__content
+      text-align: center
+      justify-items: center
+
+    &__container img
+      width: 100%
+
+@media (max-width: 425px), (max-width: 375px)
+  .intro
+    &__title
+      font-size: 2.4rem
+
+    &__subtitle
+      font-size: 1.4rem

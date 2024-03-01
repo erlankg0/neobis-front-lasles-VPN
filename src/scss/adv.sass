@@ -41,3 +41,34 @@
     font-weight: 500
     border-radius: 1rem
     border: none
+
+
+// адаптация
+@media (max-width: 1440px)
+  .adv
+    &__content
+      left: 1%
+      transform: translate(25%, -50%)
+
+@media (max-width: 1024px)
+  .adv
+    &__content
+      width: 79rem
+      left: auto
+      transform: translate(5%, -50%)
+
+
+@media (max-width: 768px), (max-width: 425px), (max-width: 375px)
+  .adv
+    position: unset
+
+    &__content
+      position: unset
+      width: 80%
+      transform: none
+      grid-template-columns: 1fr
+      gap: 2rem
+      padding: 3rem 1rem
+    &__left
+      justify-self: center
+

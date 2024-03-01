@@ -23,6 +23,7 @@
   &__img
     margin: 0 auto
     padding: 10rem 0
+    width: 100%
 
 
   &__companies
@@ -35,5 +36,19 @@
     width: 19rem
     height: 9rem
     transition: ease-in-out .5s
+
   &__company:hover
     transform: scale(1.1)
+
+@media (max-width: 768px), (max-width: 425px), (max-width: 375px)
+  .testimonials
+    padding: 0
+
+    &__companies
+      flex-wrap: wrap
+
+    &__text
+      max-width: 100%
+
+    &__description
+      width: 100%

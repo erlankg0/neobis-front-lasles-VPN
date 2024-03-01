@@ -2,6 +2,7 @@
 ul, li
   padding: 0
   margin: 0
+
 .footer
   background-color: $--background-color
   padding: 20rem 0 10rem 0
@@ -10,6 +11,7 @@ ul, li
     display: flex
     flex-direction: column
     justify-content: space-between
+
   &__content
     display: grid
     grid-template-columns: repeat(2, 1fr)
@@ -66,3 +68,15 @@ ul, li
       font-size: $--font-size-middle
       font-weight: $--font-regular
       cursor: pointer
+
+
+@media (max-width: 425px), (max-width: 375px)
+  .footer
+    padding: 3rem
+
+    &__content
+      justify-items: center
+
+    &__right
+      grid-template-columns: 1fr
+      gap: 3rem

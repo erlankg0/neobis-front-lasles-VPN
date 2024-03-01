@@ -2,6 +2,7 @@
 .pricing
   padding: 8rem 0
   background-color: rgba($--background-color, .3)
+
   &__container
     display: flex
     flex-direction: column
@@ -20,3 +21,32 @@
     width: 60rem
     text-align: center
     gap: 2rem
+
+
+// адаптация
+
+@media (max-width: 1024px)
+  .pricing
+    &__content
+      grid-template-columns: repeat(3, 30rem)
+
+
+@media (max-width: 768px), (max-width: 425px), (max-width: 375px)
+  .pricing
+    padding: 0
+
+    &__container
+      align-items: normal
+
+    &__content
+      grid-template-columns: 1fr
+      gap: 3rem
+      padding: 0 10rem
+
+    &__text
+      margin: 0 auto
+      text-align: center
+
+@media (max-width: 425px), (max-width: 375px)
+  .pricing__text
+    width: 100%
