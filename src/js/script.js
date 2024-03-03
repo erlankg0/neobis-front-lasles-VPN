@@ -26,6 +26,8 @@ document.querySelector('.burger').addEventListener('click', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const links = document.querySelectorAll('.nav__link'); // сприсок всех nav nav__link
+    const nav = document.querySelector('.nav')
+    const burger = document.querySelector('.burger')
 
     links.forEach(function (link) {
         link.addEventListener('click', function (event) {
@@ -33,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const tardetID = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(tardetID);
             targetSection.scrollIntoView({behavior: 'smooth'})
+
+            if (nav.classList.contains('open')) {
+                nav.classList.remove('open')
+                burger.classList.toggle('active')
+            }
+
         })
     })
 })
